@@ -1,0 +1,115 @@
+   1              	 .syntax unified
+   2              	 .cpu cortex-m4
+   3              	 .eabi_attribute 27,3
+   4              	 .fpu fpv4-sp-d16
+   5              	 .eabi_attribute 20,1
+   6              	 .eabi_attribute 21,1
+   7              	 .eabi_attribute 23,3
+   8              	 .eabi_attribute 24,1
+   9              	 .eabi_attribute 25,1
+  10              	 .eabi_attribute 26,1
+  11              	 .eabi_attribute 30,6
+  12              	 .eabi_attribute 34,1
+  13              	 .eabi_attribute 18,4
+  14              	 .thumb
+  15              	 .file "capture_conf.c"
+  16              	 .text
+  17              	.Ltext0:
+  18              	 .cfi_sections .debug_frame
+  19              	 .global CAPTURE_0_input
+  20              	 .section .rodata.CAPTURE_0_input,"a",%progbits
+  21              	 .align 2
+  24              	CAPTURE_0_input:
+  25 0000 00820248 	 .word 1208123904
+  26 0004 07       	 .byte 7
+  27 0005 000000   	 .space 3
+  28              	 .global CAPTURE_0_input_pin_config
+  29              	 .section .rodata.CAPTURE_0_input_pin_config,"a",%progbits
+  30              	 .align 2
+  33              	CAPTURE_0_input_pin_config:
+  34 0000 00000000 	 .space 12
+  34      00000000 
+  34      00000000 
+  35              	 .global CAPTURE_0_event0_config
+  36              	 .section .rodata.CAPTURE_0_event0_config,"a",%progbits
+  37              	 .align 2
+  40              	CAPTURE_0_event0_config:
+  41 0000 02       	 .byte 2
+  42 0001 01       	 .byte 1
+  43 0002 00       	 .byte 0
+  44 0003 00       	 .byte 0
+  45              	 .global CAPTURE_0_event1_config
+  46              	 .section .rodata.CAPTURE_0_event1_config,"a",%progbits
+  47              	 .align 2
+  50              	CAPTURE_0_event1_config:
+  51 0000 02       	 .byte 2
+  52 0001 02       	 .byte 2
+  53 0002 00       	 .byte 0
+  54 0003 00       	 .byte 0
+  55              	 .global CAPTURE_0_config
+  56              	 .section .rodata.CAPTURE_0_config,"a",%progbits
+  57              	 .align 2
+  60              	CAPTURE_0_config:
+  61 0000 60       	 .byte 96
+  62 0001 00       	 .byte 0
+  63 0002 01       	 .byte 1
+  64 0003 00       	 .space 1
+  65 0004 F1       	 .byte 241
+  66 0005 00       	 .byte 0
+  67 0006 0000     	 .space 2
+  68              	 .global CAPTURE_0
+  69              	 .section .data.CAPTURE_0,"aw",%progbits
+  70              	 .align 2
+  73              	CAPTURE_0:
+  74 0000 0A000000 	 .word 10
+  75 0004 00512502 	 .word 36000000
+  76 0008 00050000 	 .word 1280
+  77 000c 00000000 	 .word CAPTURE_0_event0_config
+  78 0010 00000000 	 .word CAPTURE_0_event1_config
+  79 0014 00000000 	 .word GLOBAL_CCU4_0
+  80 0018 00C30040 	 .word 1073791744
+  81 001c 00000000 	 .word CAPTURE_0_config
+  82 0020 00       	 .byte 0
+  83 0021 000000   	 .space 3
+  84 0024 00000000 	 .word CAPTURE_0_input
+  85 0028 00000000 	 .word CAPTURE_0_input_pin_config
+  86 002c 02       	 .byte 2
+  87 002d 00       	 .byte 0
+  88 002e 01       	 .byte 1
+  89 002f 00       	 .byte 0
+  90 0030 00       	 .byte 0
+  91 0031 00       	 .byte 0
+  92 0032 0000     	 .space 2
+  93              	 .text
+  94              	.Letext0:
+  95              	 .file 1 "c:\\infineon\\tools\\dave ide\\4.5.0.202105191637\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\machine\\_default_types.h"
+  96              	 .file 2 "c:\\infineon\\tools\\dave ide\\4.5.0.202105191637\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\stdint.h"
+  97              	 .file 3 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/CMSIS/Infineon/XMC4800_series/Include/XMC4800.h"
+  98              	 .file 4 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/XMCLib/inc/xmc_ccu4.h"
+  99              	 .file 5 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/XMCLib/inc/xmc4_scu.h"
+ 100              	 .file 6 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Dave/Generated/GLOBAL_CCU4/global_ccu4.h"
+ 101              	 .file 7 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/XMCLib/inc/xmc_gpio.h"
+ 102              	 .file 8 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/XMCLib/inc/xmc4_gpio.h"
+ 103              	 .file 9 "../Dave/Generated/CAPTURE/capture.h"
+ 104              	 .file 10 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/CMSIS/Include/cmsis_gcc.h"
+ 105              	 .file 11 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/CMSIS/Include/core_cm4.h"
+ 106              	 .file 12 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Libraries/CMSIS/Infineon/XMC4800_series/Include/system_XMC4800.h"
+ 107              	 .file 13 "C:/Infineon/Tools/DAVE IDE/4.5.0.202105191637/eclipse/workspace/can_demo/Dave/Generated/GLOBAL_CCU4/global_ccu4_extern.h"
+ 108              	 .file 14 "../Dave/Generated/CAPTURE/capture_conf.c"
+DEFINED SYMBOLS
+                            *ABS*:00000000 capture_conf.c
+    {standard input}:24     .rodata.CAPTURE_0_input:00000000 CAPTURE_0_input
+    {standard input}:21     .rodata.CAPTURE_0_input:00000000 $d
+    {standard input}:33     .rodata.CAPTURE_0_input_pin_config:00000000 CAPTURE_0_input_pin_config
+    {standard input}:30     .rodata.CAPTURE_0_input_pin_config:00000000 $d
+    {standard input}:40     .rodata.CAPTURE_0_event0_config:00000000 CAPTURE_0_event0_config
+    {standard input}:37     .rodata.CAPTURE_0_event0_config:00000000 $d
+    {standard input}:50     .rodata.CAPTURE_0_event1_config:00000000 CAPTURE_0_event1_config
+    {standard input}:47     .rodata.CAPTURE_0_event1_config:00000000 $d
+    {standard input}:60     .rodata.CAPTURE_0_config:00000000 CAPTURE_0_config
+    {standard input}:57     .rodata.CAPTURE_0_config:00000000 $d
+    {standard input}:73     .data.CAPTURE_0:00000000 CAPTURE_0
+    {standard input}:70     .data.CAPTURE_0:00000000 $d
+
+UNDEFINED SYMBOLS
+GLOBAL_CCU4_0
